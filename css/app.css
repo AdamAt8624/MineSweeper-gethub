@@ -1,40 +1,85 @@
 body {
-    background-color: rgb(34, 102, 102);
-    color:white;
-    text-align: center;
-  }
-  
-  .board-container {
-    margin: auto;
-  }
-  
-  .cell {
-    font-size: 1.5em;
-    width: 2em;
-    height: 2em;
-  }
-  .board {
-    display: inline-block; /* يجعل اللوحة تأخذ عرض المحتوى */
-    text-align: center; /* يحاذي المحتوى في المنتصف */
-    gap: 10px; /* المسافة بين الخلايا */
-    padding: 10px; /* مساحة داخلية بسيطة */
-    background-color: #000000;
-    border: 2px solid #991c1c;
-    border-radius: 8px;
+  background-color: #2E2E2E; /* Charcoal */
+  color: #FFFFFF; /* White for contrast */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.board-container {
+  margin: auto;
+}
+
+
+
+.board {
+  display: inline-block;
+  text-align: center;
+  gap: 1px;
+  padding: 2px;
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .cell {
-    background-color: #850a0a;
-    border: 1px solid #460d0d; /* حدود الخلايا */
-    width: 30px; /* عرض الخلايا */
-    height: 30px; /* ارتفاع الخلايا */
-    display: inline-flex; /* يحافظ على عرض الخلايا */
-    align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    transition: background-color 0.3s;
+  background-color: #3a3232; /* Dark Gray */
+  border: 3px solid #460d0d;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  transition: background-color 0.3s, transform 0.2s;
+  border-radius: 5px;
 }
 
 .cell:hover {
-    background-color: #e0e0e0; /* change color on hover */
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.cell.revealed {
+  background-color: #d4dee673; /* Silver */
+  cursor: default;
+}
+
+.stylehead {
+  display: inline-block;
+  text-align: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #000;
+  border: 2px solid #991c1c;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flagCount, .timer {
+  font-size: 1em; /* Smaller size */
+}
+h2 {
+  font-size: 1em;
+}
+button {
+  background-color: #D3D3D3; /* Light Gray */
+  color: #1e1e2f; /* Dark navy */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 10px;
+}
+
+button:hover {
+  background-color: #B0B0B0; /* Medium Gray */
+}
+
+button:focus {
+  outline: none;
 }
