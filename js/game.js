@@ -15,7 +15,9 @@ function onInit(size) {
   seconds = 0
   size = size
   gBoard = buildBoard(size)
-  lives = 3
+  if(size===4){
+  lives = 2}
+  else{lives=3}
   updateLivesDisplay()
   const emojiButton = document.querySelector(".emoji button")
   emojiButton.innerText = "🙂"
