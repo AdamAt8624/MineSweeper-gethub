@@ -83,3 +83,10 @@ button:hover {
 button:focus {
   outline: none;
 }
+.emoji button {
+  background-color: transparent; /* No background */
+  border: none; /* Remove border */
+  padding: 0; /* Adjust padding as needed */
+  font-size: 2em; /* Larger emoji */
+  cursor: pointer; /* Change cursor to pointer */
+}

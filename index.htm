@@ -9,10 +9,15 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body onload="onInit()" >
-    <button onclick="gBoard = buildBoard(4)">easy</button>
-    <button onclick="gBoard = buildBoard(8)">Medium</button>
-    <button onclick="gBoard = buildBoard(12)">hard</button>
+<body onload="onInit(4)" >
+    <button onclick="onInit(4)">easy</button>
+    <button onclick="onInit(8)">Medium</button>
+    <button onclick="onInit(12)">hard</button>
+    <div class="emoji" ><button onclick="onInit(4)">🙂</button> 
+    <h1 class="gameend"></h1>
+    </div>
+    <div class="livesCount">❤️‍🩹❤️‍🩹❤️‍🩹</div>
+
     <div style="margin-top: 20px;">
         <h2 class=" stylehead">Flags left: <span class="flagCount">2</span></h2>
         <h2 class=" stylehead">Timer: <span class="timer">00:00</span></h2>
